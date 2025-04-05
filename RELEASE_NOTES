@@ -1,0 +1,21 @@
+# Release Notes
+
+## Version 0.1.0 (Development)
+
+This is the initial development release of Allox, a decentralized portfolio management platform.
+
+### Features
+- Next.js frontend with Tailwind CSS
+- Express backend with Prisma ORM
+- Smart contract infrastructure
+- Docker-based development environment
+- Monorepo workspace structure
+
+### Requirements
+- Node.js 18+
+- Docker and Docker Compose
+- PostgreSQL 15
+- Git
+
+### Getting Started
+See README.md for setup instructions.
