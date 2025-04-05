@@ -1,4 +1,4 @@
-# ![Image](https://github.com/user-attachments/assets/613b713c-f458-417a-8fe5-734869d6c43c)
+# <img src="https://github.com/user-attachments/assets/613b713c-f458-417a-8fe5-734869d6c43c" alt="Allox Logo" width="150">
 
 <div align="center">
 
@@ -16,125 +16,244 @@
 
 </div>
 
-## Overview
+## 🚀 Core Value Proposition
 
-ALLOX brings institutional-grade portfolio management to DeFi. By combining advanced machine learning with blockchain technology, we enable sophisticated investment strategies previously available only to professional trading firms.
+ALLOX revolutionizes DeFi portfolio management through:
+
+1. 🤖 **Institutional-Grade AI**
+   - Advanced machine learning algorithms for market analysis
+   - Real-time portfolio optimization
+   - Predictive analytics for market trends
+   - Risk-adjusted strategy execution
+
+2. 💼 **Professional Trading Tools**
+   - Dynamic portfolio rebalancing
+   - Sophisticated risk management
+   - Custom strategy development
+   - Advanced order execution
+
+3. 🔒 **Enterprise Security**
+   - Battle-tested smart contracts
+   - Multi-signature governance
+   - MEV protection systems
+   - Flash loan exploit prevention
+
+4. 📊 **Quantitative Edge**
+   - Real-time market analysis
+   - Advanced risk modeling
+   - Performance attribution
+   - ML-powered optimization
+
+## 🏗️ System Architecture
 
 ```
-                    System Architecture
-                    
-                    ┌──────────────┐
-                    │    User      │
-                    │   Wallet     │
-                    └──────┬───────┘
-                           │
-                           ▼
-┌──────────────┐    ┌──────────────┐    ┌──────────────┐
-│   Market     │    │      AI      │    │  Strategy    │
-│   Oracle     │───▶│    Engine    │◄───│  Engine      │
-└──────────────┘    └──────┬───────┘    └──────────────┘
-                           │
-                           ▼
-                    ┌──────────────┐
-                    │  Portfolio   │
-                    │  Optimizer   │
-                    └──────────────┘
+                                System Architecture
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                           Client Layer                                   │
+│                                                                         │
+│    ┌──────────────┐      ┌──────────────┐      ┌──────────────┐       │
+│    │  Web dApp    │      │Mobile Wallet │      │    API       │       │
+│    │  Interface   │      │  Interface   │      │   Access     │       │
+│    └──────┬───────┘      └──────┬───────┘      └──────┬───────┘       │
+│           │                     │                     │                 │
+└───────────┼─────────────────────┼─────────────────────┼────────────────┘
+            │                     │                     │
+┌───────────┼─────────────────────┼─────────────────────┼────────────────┐
+│           │                     │                     │                 │
+│    ┌──────▼───────┐      ┌─────▼────────┐     ┌─────▼────────┐       │
+│    │  Portfolio   │      │    Order     │     │   Account    │       │
+│    │  Management  │      │  Execution   │     │  Management  │       │
+│    └──────┬───────┘      └──────┬───────┘     └──────┬───────┘       │
+│           │                     │                     │                 │
+│    ┌──────▼───────┐      ┌─────▼────────┐     ┌─────▼────────┐       │
+│    │     AI       │      │   Strategy   │     │    Risk      │       │
+│    │    Engine    │◄────▶│    Engine    │────▶│  Management  │       │
+│    └──────┬───────┘      └──────┬───────┘     └──────┬───────┘       │
+│           │                     │                     │                 │
+└───────────┼─────────────────────┼─────────────────────┼────────────────┘
+            │                     │                     │
+┌───────────┼─────────────────────┼─────────────────────┼────────────────┐
+│           │                     │                     │                 │
+│    ┌──────▼───────┐      ┌─────▼────────┐     ┌─────▼────────┐       │
+│    │  Blockchain  │      │   Market     │     │  Security    │       │
+│    │  Integration │◄────▶│   Oracles    │────▶│   Layer     │       │
+│    └──────────────┘      └──────────────┘     └──────────────┘       │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
 ```
 
-## Project Structure
+## 📂 Project Structure
 
 ```
 allox-core/
 ├── frontend/           # Next.js frontend application
+│   ├── app/           # Next.js 13+ app directory
+│   ├── components/    # Reusable UI components
+│   └── public/        # Static assets
 ├── backend/           # Node.js backend server
+│   ├── src/          # Source code
+│   └── prisma/       # Database schema and migrations
 ├── contracts/         # Smart contract implementations
+│   ├── src/          # Contract source code
+│   └── test/         # Contract test suite
 ├── shared/           # Shared types and utilities
 └── docs/             # Documentation and specifications
 ```
 
-## Core Capabilities
+## 🛡️ Security Framework
 
-### Intelligent Portfolio Management
-- Dynamic portfolio rebalancing based on market conditions
-- Quantitative risk management and position sizing
-- Adaptive strategy execution
-- Customizable investment parameters
+### Smart Contract Security
+- Multi-layered audit process
+- Formal verification
+- Automated testing suite
+- Bug bounty program
 
-### Advanced Security Architecture
-- Battle-tested smart contract infrastructure
-- Proactive MEV protection system
-- Industry-standard multi-signature implementation
-- Comprehensive security against flash loan exploits
+### Transaction Security
+- MEV protection
+- Slippage controls
+- Flash loan prevention
+- Sandwich attack mitigation
 
-### Quantitative Analytics Engine
-- Real-time market data analysis
-- Advanced risk modeling and metrics
-- Performance attribution analysis
-- ML-powered portfolio optimization
+### Access Control
+- Multi-signature governance
+- Role-based permissions
+- Time-locks on critical functions
+- Emergency pause mechanisms
 
-## Technical Infrastructure
+### Infrastructure Security
+- Distributed architecture
+- Redundant systems
+- Real-time monitoring
+- Automated alerts
 
-```
-                     System Components
+## 🔧 Technical Stack
 
-Frontend                 Backend                  Blockchain
-┌─────────────┐         ┌─────────────┐         ┌─────────────┐
-│   Next.js   │         │   Node.js   │         │  Ethereum   │
-│ TypeScript  │    ←    │   Express   │    →    │   Web3.js   │
-│  Tailwind   │         │  Postgres   │         │   Ethers    │
-└─────────────┘         └─────────────┘         └─────────────┘
- User Interface       Quantitative Core        Smart Contracts
-```
+### Frontend
+- **Framework**: React with Next.js 13+
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **State**: Redux Toolkit
+- **Web3**: ethers.js, Web3-React
 
-## Development Setup
+### Backend
+- **Runtime**: Node.js
+- **Framework**: Express.js
+- **Database**: PostgreSQL with Prisma
+- **Cache**: Redis
+- **Queue**: RabbitMQ
 
+### Blockchain
+- **Networks**: Ethereum, Arbitrum, Optimism
+- **Contracts**: Solidity
+- **Testing**: Hardhat, Foundry
+- **Indexing**: The Graph
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+- Git
+- PostgreSQL 14+
+
+### Development Setup
+
+1. **Clone Repository**
 ```bash
-# Clone Repository
 git clone https://github.com/AlloxLab/allox-core.git
 cd allox-core
+```
 
-# Frontend Setup
+2. **Install Dependencies**
+```bash
+# Root dependencies
+npm install
+
+# Frontend dependencies
 cd frontend
 npm install
 cp .env.example .env.local
-npm run dev
 
-# Backend Setup (in a new terminal)
-cd backend
+# Backend dependencies
+cd ../backend
 npm install
 cp .env.example .env
+```
+
+3. **Database Setup**
+```bash
+# Generate Prisma client
+cd backend
 npx prisma generate
+npx prisma migrate dev
+```
+
+4. **Start Development Servers**
+```bash
+# Start backend (from backend directory)
 npm run dev
 
-# Smart Contract Setup (in a new terminal)
+# Start frontend (in new terminal, from frontend directory)
+npm run dev
+```
+
+5. **Smart Contract Development**
+```bash
 cd contracts
 npm install
 cp .env.example .env
 npx hardhat compile
 ```
 
-## $ALLOX Token Utility
+## 🗺️ Roadmap
 
-The ALLOX token is integral to the platform's functionality:
-- Governance participation in protocol decisions
-- Revenue sharing through staking mechanisms
-- Access to advanced platform features
-- Liquidity provisioning incentives
+### Phase 1: Foundation
+- Core platform development
+- Basic portfolio management
+- Smart contract deployment
+- Initial security features
 
-## Join Our Community
+### Phase 2: Enhancement
+- Advanced AI integration
+- Extended strategy options
+- Cross-chain capabilities
+- Enhanced security measures
 
-Connect with developers and users:
-- Twitter: [@allox_xyz](https://x.com/allox_xyz)
-- Website: [allox.xyz](https://www.allox.xyz)
+### Phase 3: Expansion
+- Institutional features
+- Additional chain support
+- Advanced risk management
+- Ecosystem partnerships
 
-## Contributing
+### Phase 4: Innovation
+- DAO governance
+- Advanced derivatives
+- Layer 2 optimization
+- Protocol integrations
 
-We actively encourage community contributions. See our [Contributing Guidelines](https://github.com/AlloxLab/allox-core/blob/main/CONTRIBUTING.md) for collaboration details.
+## 💎 $ALLOX Token Utility
+
+The ALLOX token powers platform functionality:
+- 🏛️ Governance participation
+- 💰 Revenue sharing through staking
+- 🔓 Premium feature access
+- 💧 Liquidity provisioning
+
+## 🤝 Join Our Community
+
+Connect with us:
+- 🐦 Twitter: [@allox_xyz](https://x.com/allox_xyz)
+- 🌐 Website: [allox.xyz](https://www.allox.xyz)
+
+## 📝 Contributing
+
+We welcome community contributions! See our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
 ---
 
 <div align="center">
 
-Built by quantitative finance experts and blockchain engineers.
+Built with 💜 by quantitative finance experts and blockchain engineers.
 
 </div> 
