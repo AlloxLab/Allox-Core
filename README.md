@@ -1,6 +1,6 @@
-# <img src="https://github.com/user-attachments/assets/613b713c-f458-417a-8fe5-734869d6c43c" alt="Allox Logo" width="150">
-
 <div align="center">
+
+<img src="https://github.com/user-attachments/assets/613b713c-f458-417a-8fe5-734869d6c43c" alt="Allox Logo" width="150">
 
 # ALLOX
 
